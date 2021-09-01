@@ -73,12 +73,12 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello there*, *I*'*m* [𝓜𝓻,𝓙𝓸𝓴𝓮𝓻](https://telegra.ph/file/6525d89de5b72003d80fa.png)
-*I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group*
+*Hello there*, *I*'*m* [SHU KURENAI](https://telegra.ph/file/eb183a86b5fc974b56d99.jpg)
+*I am a Beyblade Themed Group Managing Bot and I will help in managing your group*
 🍃🔻 **Make sure you read** `INFO` **Section Below** 🔺🍃 
 """
 
-MRJOKER_IMG = "hhttps://telegra.ph/file/6525d89de5b72003d80fa.png"
+MRJOKER_IMG = "https://telegra.ph/file/eb183a86b5fc974b56d99.jpg"
 
 buttons = [
     [
@@ -87,24 +87,24 @@ buttons = [
     ],
 
     [
-        InlineKeyboardButton(text="🚀 𝗜𝗡𝗙𝗢 🚀", callback_data="mrjoker_"),
+        InlineKeyboardButton(text="FUN CHAT ", url="https://t.me/CrimsonDragon"),
         InlineKeyboardButton(
-            text=" 𝗕𝗔𝗦𝗜𝗖 𝗛𝗘𝗟𝗣 👮", callback_data="mrjoker_basichelp"
+            text="Channel", url="https://t.me/FreeLogogiveway"
         ),
     ],
     [
-        InlineKeyboardButton(text="➕ 𝐀𝐃𝐃 𝐌𝐑.𝐉𝐎𝐊𝐄𝐂 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕", url="http://t.me/Mrjokerlk_bot?startgroup=true"),
+        InlineKeyboardButton(text="➕ 𝐀𝐃𝐃 SHU KUREBAI 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕", url="http://t.me/shuthebladersbot?startgroup=true"),
     ],
 ]
 
 
 HELP_STRINGS = """
 **SETTINGS**
-**𝐂𝐥𝐢𝐜𝐤 𝐨𝐧 𝐭𝐡𝐞 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐛𝐞𝐥𝐨𝐰 𝐭𝐨 𝐠𝐞𝐭 𝐝𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐚𝐛𝐨𝐮𝐭 𝐬𝐩𝐞𝐜𝐢𝐟𝐢𝐜 𝐦𝐨𝐝𝐮𝐥𝐞𝐬**[🤖](https://telegra.ph/file/6525d89de5b72003d80fa.png)"""
+**𝐂𝐥𝐢𝐜𝐤 𝐨𝐧 𝐭𝐡𝐞 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐛𝐞𝐥𝐨𝐰 𝐭𝐨 𝐠𝐞𝐭 𝐝𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐚𝐛𝐨𝐮𝐭 𝐬𝐩𝐞𝐜𝐢𝐟𝐢𝐜 𝐦𝐨𝐝𝐮𝐥𝐞𝐬**[🤖](https://telegra.ph/file/eb183a86b5fc974b56d99.jpg)"""
 
 
 
-DONATE_STRING = """ @kavinduaj"""
+DONATE_STRING = """ @crimsonflashs"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -223,7 +223,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧", url="t.me/lkhitech")]]
+                [[InlineKeyboardButton(text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧", url="https://t.me/Botcreatersss")]]
             ),
         )
         
@@ -299,7 +299,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "❮❮❮❮🤡 𝗠𝗿.𝗝𝗼𝗸𝗲𝗿 𝗛𝗲𝗹𝗽 𝗳𝗼𝗿 *{}* 𝗺𝗼𝗱𝘂𝗹𝗲 🤡❯❯❯❯:\n".format(
+                "❮❮❮❮🤡SHU KERUNAI 𝗛𝗲𝗹𝗽 𝗳𝗼𝗿 *{}* 𝗺𝗼𝗱𝘂𝗹𝗲 🤡❯❯❯❯:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
